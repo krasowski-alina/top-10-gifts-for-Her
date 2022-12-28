@@ -1,0 +1,47 @@
+body {
+    background-color: #FCE2DB;
+}
+.container {
+    display: flex;
+    justify-content: center;
+}
+.header, .textContStyle {
+    color: #432C7A;
+}
+.textContStyle {
+    text-align: center;
+    font-size: 20px;
+}
+.heading {
+    color: #FF8FB1;
+    text-shadow: 1px 1px 1px black;
+    font-size: 28px;
+}
+.gift {
+    height: 300px;
+    width: 270px;
+}
+.trashCan {
+    height: 35px;
+    margin: 10px;
+}
+.contWidth {
+    width: 600px;
+    margin: 0 auto;
+}
+.btn {
+    padding: 10px;
+    border-radius: 10px;
+    border: none;
+    background-color: #80489C;
+    color: #FCE2DB;
+    margin: 8px;
+}
+.btnShowMore {
+background-color: transparent;
+border: none;
+color: #FF8FB1;
+text-shadow: 1px 1px 1px black;
+font-size: 20px;
+font-weight: bolder;
+}
