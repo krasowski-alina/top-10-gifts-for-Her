@@ -1,6 +1,7 @@
 import { useState } from 'react';
 import { data } from './data';
 import classes from './Gifts.module.css'
+import Slider from './Slider';
 import trash from './trash.png'
 function Gifts(){
     const [ideas, setIdeas] = useState(data);
@@ -19,14 +20,14 @@ function Gifts(){
                 <h1 className={classes.header}>Top {ideas.length} gifts for HER</h1>
             </div>
             {ideas.map((idea => {
-                const {id, giftName, image, description, showMore} = idea;
+                const {id, giftName, images, description, showMore} = idea;
                 return(
                     <div key={id}>
                         <div className={classes.container}>
                             <h2 className={classes.heading}>{giftName}</h2>
                         </div>
                         <div className={classes.container}>
-                            <img className={classes.gift} src={image} alt='gift'/>
+                            <Slider imageProps={images}/>
                         </div> 
                         <div className={classes.container}>
                             {/* <button onClick={()=> removeItem(id)}><img src={trash} alt="trash icon" height="40px"/></button> */}
